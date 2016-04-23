@@ -22,9 +22,10 @@ img3=cam.getImage()
 escaladegris=img2.grayscale()
 escaladegris.save("fotogray.jpg")
 
-histograma=escaladegris.histogram().show()
+histograma=escaladegris.histogram()
 
-histo= plt.plot(histograma)
+plt.figure(1)
 
-histo.save("histograma.jpg")
+plt.plot(histograma)
 
+plt.show() 
